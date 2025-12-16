@@ -27,8 +27,7 @@ It showcases how vision and NLP techniques can be integrated to extract, retriev
 4. Generate embeddings for the extracted text.  
 5. Retrieve top relevant documents for a query and generate answers using a GPT-style model.
 
-## Project Pipeline
-
+'''text
 Document Image → [Image Preprocessing] → [MobileNetV2 Classifier]  
                          ↓  
                    [OCR Extraction]  
@@ -38,6 +37,7 @@ Document Image → [Image Preprocessing] → [MobileNetV2 Classifier]
           [Text Retrieval using Cosine Similarity]  
                          ↓  
           [RAG-style Answer Generation (GPT model)]
+'''
 
 ## Example Use Case
 
