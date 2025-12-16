@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 """import cv2
 import os
 
@@ -63,8 +57,8 @@ from sklearn.svm import SVC
 
 
 transform = transforms.Compose([
-    transforms.Resize((128, 128)),             # smaller images → faster CPU run
-    transforms.Grayscale(num_output_channels=3),   # ensure 3 channels
+    transforms.Resize((128, 128)),             
+    transforms.Grayscale(num_output_channels=3),   
     transforms.RandomRotation(10),
     transforms.ColorJitter(brightness=0.2, contrast=0.2), 
     transforms.ToTensor(),
@@ -248,7 +242,6 @@ val_texts   = [clean_text(t) for t in val_texts]
 
 #Convert Text To Embeddings
 
-# Use a small, fast model for demo
 model_embed = SentenceTransformer('msmarco-distilbert-base-dot-prod-v3')  
 
 train_embeddings = model_embed.encode(train_texts)
