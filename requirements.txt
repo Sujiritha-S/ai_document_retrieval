@@ -1,0 +1,10 @@
+torch
+torchvision
+pillow
+opencv-python
+pytesseract
+sentence-transformers
+scikit-learn
+transformers
+numpy
+nltk
