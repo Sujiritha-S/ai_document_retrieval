@@ -44,14 +44,14 @@ This project demonstrates an end-to-end pipeline for understanding scanned docum
 6. Generate answers using GPT-style model (or rule-based extraction for invoices).
 ```
 Document Image → [Image Preprocessing] → [MobileNetV2 Classifier]
-↓
-[OCR Extraction]
-↓
-[Text Cleaning & Embeddings]
-↓
-[Text Retrieval using Cosine Similarity]
-↓
-[RAG-style Answer Generation / Rule-based QA]
+                         ↓
+                  [OCR Extraction]
+                         ↓
+             [Text Cleaning & Embeddings]
+                         ↓
+        [Text Retrieval using Cosine Similarity]
+                         ↓
+     [RAG-style Answer Generation / Rule-based QA]
 ```
 
 ## Example Use Case
